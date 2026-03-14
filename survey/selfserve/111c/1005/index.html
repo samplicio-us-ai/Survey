@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun Survey (Demo Only)</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    h1 { color: #2c7; }
+    form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    label { display: block; margin: 10px 0 5px; }
+    input, select { width: 100%; padding: 8px; margin-bottom: 15px; }
+    button { background: #2c7; color: #fff; border: none; padding: 10px 15px; cursor: pointer; }
+    button:hover { background: #1a5; }
+    .note { color: #888; font-size: 0.9em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Favorite Fruit Survey 🍎🍌🍇</h1>
+  <form onsubmit="event.preventDefault(); window.location.href='https://panelopenionbd.github.io/Surveys/success';">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
 
+    <label for="fruit">Pick your favorite fruit:</label>
+    <select id="fruit">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Grapes</option>
+      <option>Mango</option>
+    </select>
+
+    <label for="feedback">Why do you like it?</label>
+    <input type="text" id="feedback" placeholder="Type your reason">
+
+    <button type="submit">Submit</button>
+    <p class="note">Note: This survey is for demonstration only. No data is collected or stored.</p>
+  </form>
+</body>
+</html>
