@@ -1,1 +1,31 @@
-# Survey
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenionBD Survey Router</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function routeSurvey() {
+      // 35% chance success
+      const chance = Math.random();
+      if (chance <= 0.35) {
+        // Randomly pick one of the two surveys
+        const surveys = [
+          "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1005/",
+          "https://openionbdsurveys.github.io/MinecraftSurvey01/"
+        ];
+        const chosen = surveys[Math.floor(Math.random() * surveys.length)];
+        window.location.href = chosen;
+      } else {
+        window.location.href = "fail.html";
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <h2>Welcome to OpenionBD Surveys</h2>
+    <p>Click below to try your luck!</p>
+    <button onclick="routeSurvey()" class="survey-btn">Start</button>
+  </main>
+</body>
+</html>
