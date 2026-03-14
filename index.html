@@ -16,7 +16,20 @@
         const chosen = surveys[Math.floor(Math.random() * surveys.length)];
         window.location.href = chosen;
       } else {
-        window.location.href = "fail.html";
+        // Redirect to fail.html with countdown
+        let countdown = 5; // seconds
+        document.getElementById("message").innerHTML =
+          "Screening failed. Redirecting in " + countdown + " seconds...";
+        const timer = setInterval(() => {
+          countdown--;
+          document.getElementById("message").innerHTML =
+            "Screening failed. Redirecting in " + countdown + " seconds...";
+          if (countdown <= 0) {
+            clearInterval(timer);
+            window.location.href =
+              "https://screeningopenionbd.github.io/Screening.aspx.mysurveyvzRouting-01/fail.html";
+          }
+        }, 1000);
       }
     }
   </script>
@@ -24,7 +37,7 @@
 <body>
   <main>
     <h2>Welcome to OpenionBD Surveys</h2>
-    <p>Click below to try your luck!</p>
+    <p id="message">Click below to try your luck!</p>
     <button onclick="routeSurvey()" class="survey-btn">Start</button>
   </main>
 </body>
