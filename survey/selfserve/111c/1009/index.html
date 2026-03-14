@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deadly Purge SMP Survey - Page 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    h1 { color: #2c7; }
+    form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    label { display: block; margin: 10px 0 5px; }
+    select, input[type="text"] { width: 100%; padding: 8px; margin-bottom: 15px; }
+    button { background: #2c7; color: #fff; border: none; padding: 10px 15px; cursor: pointer; }
+    button:hover { background: #1a5; }
+  </style>
+</head>
+<body>
+  <h1>📋 Deadly Purge SMP Survey</h1>
+  <form onsubmit="event.preventDefault(); window.location.href='page2.html';">
+
+    <label>1. What is your age?</label>
+    <select>
+      <option>Under 18</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45+</option>
+    </select>
+
+    <label>2. What is your gender?</label>
+    <select>
+      <option>Male</option><option>Female</option><option>Non-binary</option><option>Prefer not to say</option>
+    </select>
+
+    <label>3. Which country do you live in?</label>
+    <select><option>United States</option><option>Bangladesh</option></select>
+
+    <label>4. If US: Which state?</label>
+    <input type="text" placeholder="Enter state">
+
+    <label>5. If BD: Which division?</label>
+    <input type="text" placeholder="Enter division">
+
+    <label>6. Do you live in an urban or rural area?</label>
+    <input type="text" placeholder="Urban / Rural">
+
+    <label>7. What is your highest education level?</label>
+    <input type="text" placeholder="Enter education level">
+
+    <label>8. What is your occupation?</label>
+    <input type="text" placeholder="Enter occupation">
+
+    <label>9. What is your monthly household income?</label>
+    <input type="text" placeholder="Enter income">
+
+    <label>10. What device do you primarily use for gaming?</label>
+    <select><option>PC</option><option>Laptop</option><option>Console</option><option>Mobile</option></select>
+
+    <button type="submit">Next →</button>
+  </form>
+</body>
+</html>
