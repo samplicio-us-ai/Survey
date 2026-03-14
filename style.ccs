@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.survey-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF; /* Blue */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.survey-btn:hover {
+  background-color: #0056b3;
+}
