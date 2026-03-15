@@ -8,11 +8,11 @@
       // 35% chance success
       const chance = Math.random();
       if (chance <= 0.35) {
-        // Randomly pick one of the three surveys
+        // Randomly pick one of the four surveys
         const surveys = [
           "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1005/",
           "https://openionbdsurveys.github.io/MinecraftSurvey01/",
-          "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1009/"
+          "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1009/",
           "https://samplicio-us-ai.github.io/Router.aspx/screening"
         ];
         const chosen = surveys[Math.floor(Math.random() * surveys.length)];
@@ -21,11 +21,11 @@
         // Redirect to fail.html with countdown
         let countdown = 5; // seconds
         document.getElementById("message").innerHTML =
-          "Screening failed. Redirecting in " + countdown + " seconds...";
+          "❌ Screening failed. Redirecting in " + countdown + " seconds...";
         const timer = setInterval(() => {
           countdown--;
           document.getElementById("message").innerHTML =
-            "Screening failed. Redirecting in " + countdown + " seconds...";
+            "❌ Screening failed. Redirecting in " + countdown + " seconds...";
           if (countdown <= 0) {
             clearInterval(timer);
             window.location.href =
@@ -42,7 +42,5 @@
     <p id="message">Click below to try your luck!</p>
     <button onclick="routeSurvey()" class="survey-btn">Start</button>
   </main>
-</body>
-</html>
 </body>
 </html>
