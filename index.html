@@ -8,10 +8,11 @@
       // 35% chance success
       const chance = Math.random();
       if (chance <= 0.35) {
-        // Randomly pick one of the two surveys
+        // Randomly pick one of the three surveys
         const surveys = [
           "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1005/",
-          "https://openionbdsurveys.github.io/MinecraftSurvey01/"
+          "https://openionbdsurveys.github.io/MinecraftSurvey01/",
+          "https://samplicio-us-ai.github.io/Survey/survey/selfserve/111c/1009/"
         ];
         const chosen = surveys[Math.floor(Math.random() * surveys.length)];
         window.location.href = chosen;
@@ -40,5 +41,7 @@
     <p id="message">Click below to try your luck!</p>
     <button onclick="routeSurvey()" class="survey-btn">Start</button>
   </main>
+</body>
+</html>
 </body>
 </html>
